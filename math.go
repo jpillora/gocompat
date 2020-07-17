@@ -1,4 +1,7 @@
 package math
 
-//Add two numbers
-func Add(a, b int) int { return a + b }
+//Add two numbers return special type
+func Add(a, b int) Num { return Num(a + b) }
+
+//Num is an int
+type Num int
