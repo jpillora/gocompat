@@ -1,7 +1,7 @@
 package math
 
-//Add two numbers return special type
-func Add(a, b int) Num { return Num(a + b) }
+import "github.com/jpillora/gocompat/newmath"
 
-//Num is an int
-type Num int
+var Add = newmath.Add
+
+type Num = newmath.Num
